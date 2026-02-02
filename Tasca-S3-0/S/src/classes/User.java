@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package classes;
 
 public class User {
     private String name;
@@ -22,13 +21,7 @@ public class User {
             throw new IllegalArgumentException("Password must be at least 8 characters long and contain an uppercase letter.");
         }
 
-        System.out.println("📧 Sending confirmation email to: " + email);
 
-        boolean userConfirmed = true;
-        if (!userConfirmed) {
-            System.out.println("⚠️ User did not confirm registration.");
-            return;
-        }
     }
 
     // Getters
