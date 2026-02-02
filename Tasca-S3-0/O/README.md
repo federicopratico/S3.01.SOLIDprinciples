@@ -101,7 +101,7 @@ En l’arxiu Java adjunt trobaràs una classe que **no respecta el principi OCP*
 
 ✅ **Evita instruccions condicionals (if/else, switch)** per decidir comportaments que poden variar amb el temps.
 
-✅ **Defineix interfícies o classes abstractes** que permetin afegir noves funcionalitats sense tocar el codi existent.
+✅ **Defineix interfícies o models abstractes** que permetin afegir noves funcionalitats sense tocar el codi existent.
 
 ✅ **Fes servir patrons com a Estratègia, Fàbrica o Cadena de Responsabilitat** segons el context.
 

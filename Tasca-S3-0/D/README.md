@@ -4,9 +4,9 @@
 
 El **Principi d’Inversió de Dependències (DIP)** estableix que:
 
-> **Les classes han de dependre d’abstraccions, no de classes concretes.**
+> **Les models han de dependre d’abstraccions, no de models concretes.**
 
-En altres paraules, el codi hauria de **basar-se en interfícies o classes abstractes, no en implementacions específiques**. Això permet que les diferents parts del sistema estiguin **desacoblades**, cosa que **facilita el canvi, la substitució i la reutilització** de components.
+En altres paraules, el codi hauria de **basar-se en interfícies o models abstractes, no en implementacions específiques**. Això permet que les diferents parts del sistema estiguin **desacoblades**, cosa que **facilita el canvi, la substitució i la reutilització** de components.
 
 📌 Això es pot resumir en dues regles clau:
 - 1 **Els mòduls de nivell alt** (lògica del negoci) **no han de dependre dels de nivell baix** (implementacions).
@@ -108,15 +108,15 @@ A l’arxiu Java inclòs en aquest directori, trobaràs una classe que depèn **
 
 1. Identificar aquesta dependència directa.
 2. Crear una **interfície o abstracció** adequada.
-3. Refactoritzar les classes perquè **depenquin de l’abstracció**, i no de la implementació concreta.
+3. Refactoritzar les models perquè **depenquin de l’abstracció**, i no de la implementació concreta.
 4. Aplicar **injecció de dependències** (via constructor, setter o mètode).
 ---
 
 ## 📌 Consells per aplicar DIP
 
-✅ Les classes de nivell alt han de ser **independents dels detalls tècnics**.
+✅ Les models de nivell alt han de ser **independents dels detalls tècnics**.
 
-✅ Utilitza **interfícies o classes abstractes** per desacoblar.
+✅ Utilitza **interfícies o models abstractes** per desacoblar.
 
 ✅ Aplica patrons com **Injecció de Dependències (DI) o Fàbrica (Factory)**.
 
@@ -138,7 +138,7 @@ Quan segueixes **DIP**:
 
 🚀Endavant! Refactoritza amb el principi DIP en ment i millora l’estructura del teu codi.
 
-❓ **Depens de classes concretes? Com podries invertir aquesta dependència?**
+❓ **Depens de models concretes? Com podries invertir aquesta dependència?**
  
 
 

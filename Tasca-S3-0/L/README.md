@@ -168,7 +168,7 @@ Trobaràs una classe Java que utilitza **malament l'herència** i, com a conseq�
 
 ✅ **Considera patrons com Composició`*` sobre Herència quan no hi ha una relació clara de tipus.**
 
-`*`**“Composició”** és un concepte de **POO** que significa construir una classe utilitzant altres objectes (d’altres classes) com a parts internes, en lloc de crear una jerarquia d’herència (subclasses).
+`*`**“Composició”** és un concepte de **POO** que significa construir una classe utilitzant altres objectes (d’altres models) com a parts internes, en lloc de crear una jerarquia d’herència (subclasses).
 
 ---
 

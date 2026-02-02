@@ -1,4 +1,4 @@
-package classes;
+package models;
 
 public class User {
     private String name;
@@ -9,19 +9,6 @@ public class User {
         this.name = name;
         this.email = email;
         this.password = password;
-    }
-
-    public void register() {
-
-        if (email == null || !email.contains("@") || !email.contains(".")) {
-            throw new IllegalArgumentException("Invalid email address.");
-        }
-
-        if (password == null || password.length() < 8 || !password.matches(".*[A-Z].*")) {
-            throw new IllegalArgumentException("Password must be at least 8 characters long and contain an uppercase letter.");
-        }
-
-
     }
 
     // Getters

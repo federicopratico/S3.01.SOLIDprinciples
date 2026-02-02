@@ -41,11 +41,11 @@ public class Informe {
     }
 }
 ```
-🔴 Problema: Cada una d’aquestes funcions **pertany a responsabilitats diferents**, i haurien d’estar separades en diferents classes.
+🔴 Problema: Cada una d’aquestes funcions **pertany a responsabilitats diferents**, i haurien d’estar separades en diferents models.
 
 ⚠️ Estàs violant el principi! 
 
-✅ Versió refactoritzada amb SRP aplicat: separem les responsabilitats en classes diferents:
+✅ Versió refactoritzada amb SRP aplicat: separem les responsabilitats en models diferents:
 
 - **1️⃣ Informe: només conté el contingut.**
 
@@ -114,7 +114,7 @@ A l’arxiu Java adjunt trobaràs una classe que **no respecta aquest principi**
 🔧 El teu repte és:
 
 1. Analitzar les responsabilitats múltiples que té la classe.
-2. Separar-les en **classes diferents**, cadascuna amb una sola responsabilitat clara.
+2. Separar-les en **models diferents**, cadascuna amb una sola responsabilitat clara.
 3. Mantenir el codi llegible, modular i fàcil de mantenir.
 
 ---
@@ -125,7 +125,7 @@ A l’arxiu Java adjunt trobaràs una classe que **no respecta aquest principi**
 
 ✅ Si n’hi ha més d’una... és hora de separar responsabilitats!
 
-✅ No tinguis por de crear **més classes petites i enfocades**.
+✅ No tinguis por de crear **més models petites i enfocades**.
 
 ---
 

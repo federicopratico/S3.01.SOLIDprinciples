@@ -6,7 +6,7 @@ El **Principi de Segregació d’Interfícies (ISP)** estableix que:
 
 > **Una classe no hauria d’estar obligada a implementar mètodes que no necessita.**
 
-Això vol dir que les interfícies **han de ser específiques i estar ben delimitades segons la funcionalitat**. Si una interfície és massa gran o genèrica, pot forçar les classes a implementar mètodes que no tenen sentit per a elles.
+Això vol dir que les interfícies **han de ser específiques i estar ben delimitades segons la funcionalitat**. Si una interfície és massa gran o genèrica, pot forçar les models a implementar mètodes que no tenen sentit per a elles.
 
 ⚠️ Aquest problema és conegut com a **interfícies grasses** (fat interfaces) o **"code smell"** `*` d’**interfícies inflades** o amb massa responsabilitats.
 
@@ -116,11 +116,11 @@ public class ImpressoraMultifuncio implements Impressora, Escaner, Fax {
 
 ## 🎯 Objectiu de l’exercici
 
-A l’arxiu Java adjunt trobaràs una classe o jerarquia de classes que implementa una **interfície massa gran**.
+A l’arxiu Java adjunt trobaràs una classe o jerarquia de models que implementa una **interfície massa gran**.
 
 🔧 El teu repte és:
 
-1. Detectar quins mètodes **no tenen sentit** per a algunes de les classes.
+1. Detectar quins mètodes **no tenen sentit** per a algunes de les models.
 2. Refactoritzar la interfície en **interfícies més petites i enfocades**.
 3. Fer que cada classe implementi **només les interfícies que necessita**.
 
@@ -140,7 +140,7 @@ A l’arxiu Java adjunt trobaràs una classe o jerarquia de classes que implemen
 ## 💬 Reflexió
 
 Quan se segueix **ISP**:
-- Les classes són més simples i coherents.
+- Les models són més simples i coherents.
 - Evitem implementacions absurdes o innecessàries.
 - Es facilita l’ús de composició en lloc d’herència forçada.
 
