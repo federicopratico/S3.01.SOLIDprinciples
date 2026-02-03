@@ -1,6 +1,6 @@
 package interfaces;
 
 
-public interface InstrumentBehaviour {
+public interface Instrument {
     void play();
 }

@@ -1,11 +1,11 @@
-import interfaces.InstrumentBehaviour;
+import interfaces.Instrument;
 import services.DrumPlayer;
 import services.GuitarPlayer;
 import services.PianoPlayer;
 
 public class InstrumentPlayer {
-    public void play(InstrumentBehaviour player) {
-        player.play();
+    public void play(Instrument instrument) {
+        instrument.play();
     }
 
     public static void main(String[] args) {
