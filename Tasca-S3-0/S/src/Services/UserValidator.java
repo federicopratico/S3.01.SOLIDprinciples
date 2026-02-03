@@ -3,6 +3,7 @@ package Services;
 import models.User;
 
 public class UserValidator {
+
     private EmailValidator emailValidator;
     private PasswordValidator passwordValidator;
 
