@@ -1,2 +1,3 @@
 .idea
 S3.01.SOLIDPrinciples.iml
+${project.build.directory}

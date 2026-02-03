@@ -1,20 +1,17 @@
+import interfaces.InstrumentBehaviour;
+import services.DrumPlayer;
+import services.GuitarPlayer;
+import services.PianoPlayer;
+
 public class InstrumentPlayer {
-    public void play(String instrument) {
-        if ("guitar".equals(instrument)) {
-            System.out.println("🎸 Strumming the guitar");
-        } else if ("drums".equals(instrument)) {
-            System.out.println("🥁 Beating the drums");
-        } else if ("piano".equals(instrument)) {
-            System.out.println("🎹 Playing the piano");
-        } else {
-            System.out.println("🔇 Unknown instrument");
-        }
+    public void play(InstrumentBehaviour player) {
+        player.play();
     }
 
     public static void main(String[] args) {
         InstrumentPlayer player = new InstrumentPlayer();
-        player.play("guitar");
-        player.play("drums");
-        player.play("piano");
+        player.play(new GuitarPlayer());
+        player.play(new DrumPlayer());
+        player.play(new PianoPlayer());
     }
 }
